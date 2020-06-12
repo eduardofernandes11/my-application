@@ -1,24 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.myapplication">
+        package="com.koioannis.javacourse_eshop">
 
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity
-            android:name=".MainActivity"
+            android:allowBackup="true"
+            android:icon="@drawable/ic_logo_launcher"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".ui.Batata"></activity>
+        <activity android:name=".ui.Maca" />
+        <activity android:name=".ui.Beterraba" />
+        <activity android:name=".ui.Cenoura" />
+        <activity android:name=".ui.Morango" />
+        <activity android:name=".ui.Alface" />
+        <activity android:name=".ui.Menu" />
+        <activity android:name=".ui.Sobre"/>
+        <activity android:name=".ui.MetodosPaymentActivity"/>
+        <activity android:name=".ui.AGJoaquim"/>
+        <activity android:name=".ui.AGJoao"/>
+        <activity android:name=".ui.AGCarlos"/>
+        <activity android:name=".ui.Parceiros"/>
+
+        <activity
+                android:name=".ui.InvoiceActivity"
+                android:label="@string/title_activity_tool_bar"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name=".ui.PaymentActivity"
+                android:label="@string/title_activity_payment"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name=".ui.CheckoutActivity"
+                android:label="@string/title_activity_checkout"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name=".ui.MainActivity"
+                android:label="@string/title_activity_main"
+                android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:backgroundTint="#0031B404"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".ui.Sobre"
+        tools:showIn="@layout/activity_sobre">
+
+    <LinearLayout
+            android:id="@+id/outterLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/pag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="FarmAtHome"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:onClick="toMainActivity"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal" >
+
+            <TextView
+                    android:id="@+id/cart"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="O FarmAtHome é um serviço moderno de entrega de produtos frescos ao domicílio na zona de Aveiro, de forma fácil e agradável para todos os consumidores.\nSe és agricultor e sofres bastante com a oferta de produtos  de hoje em dia, o FarmAtHome é uma excelente escolha para te manter próximo dos consumidores."
+                    android:textColor="#5A5A5A"
+                    android:textSize="23sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal" >
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Inscreve-te no nosso site e coloca os teus produtos à venda na nossa plataforma."
+                    android:textAlignment="center"
+                    android:textColor="#5A5A5A"
+                    android:textSize="23sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
